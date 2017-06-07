@@ -46,20 +46,6 @@ geteasyrsa () {
 
 MYIP=$(wget -qO- ipv4.icanhazip.com)
 
-
-# go to root
-cd
-
-# check registered ip
-wget -q -O IP $source/data/IP.txt
-if ! grep -w -q $MYIP IP; then
-	echo "Maaf, hanya IP yang terdaftar yang bisa menggunakan script ini!!"
-	echo "Register IP: https://www.mastahit.com/data/register.php"
-	echo "Hubungi: Rizal Hidayat (fb.com/admin.soned atau 081515292117)"
-	rm -f /root/IP
-	exit
-fi
-
 # Try to get our IP from the system and fallback to the Internet.
 # I do this to make the script compatible with NATed servers (lowendspirit.com)
 # and to avoid getting an IPv6.

@@ -92,8 +92,8 @@ if [[ -e /etc/openvpn/server.conf ]]; then
 else
 	clear
 	echo "-------------------------- OpenVPN Installer for Debian, Ubuntu, CentOS -------------------------"
-  echo ""
-		echo "                   DEVELOPED BY Rizal Hidayat (fb.com/admin.soned, 081515292117)             "
+ 	echo ""
+	echo "                   DEVELOPED BY Rizal Hidayat (fb.com/admin.soned, 081515292117)             "
 	echo ""
 	echo ""
 	# OpenVPN setup and first user creation
